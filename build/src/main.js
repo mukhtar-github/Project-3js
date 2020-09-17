@@ -25,6 +25,19 @@ const far = 100; // the far clipping plane
 
 const camera = new PerspectiveCamera(fov, aspect, near, far);
 
+// every object is initially created at ( 0, 0, 0 )
+// move the camera back so we can view the scene
+camera.position.set(0, 0, 10);
+
+// create a geometry
+const geometry = new BoxBufferGeometry(2, 2, 2);
+
+// create a default (white) Basic material
+const material = new MeshBasicMaterial();
+
+// create a Mesh containing the geometry and material
+const cube = new Mesh(geometry, material);
+
 
 
 
