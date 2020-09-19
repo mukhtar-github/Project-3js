@@ -38,7 +38,14 @@ const material = new MeshBasicMaterial();
 // create a Mesh containing the geometry and material
 const cube = new Mesh(geometry, material);
 
+// add the mesh to the scene
+scene.add(cube);
 
+// create the renderer
+const renderer = new WebGLRenderer();
+
+// next, set the renderer to the same size as our container element
+renderer.setSize(container.clientWidth, container.clientHeight);
 
 
 
