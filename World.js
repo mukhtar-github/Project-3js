@@ -10,6 +10,7 @@ class World {
     setSize(width, height, pixelRatio) {
         // TODO
     }
+
 }
 
 export { World };
