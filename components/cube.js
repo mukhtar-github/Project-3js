@@ -1,5 +1,5 @@
 
-import { BoxBufferGeometry, Mesh, MeshBasicMaterial } from 'three';
+import { BoxBufferGeometry, Mesh, MeshBasicMaterial } from '../systems/node_modules/three';
 
 function createCube() {
   // create a geometry
