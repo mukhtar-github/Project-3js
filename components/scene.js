@@ -1,5 +1,5 @@
 
-import { Color, Scene } from '../systems/node_modules/three';
+import { Color, Scene } from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/build/three.module.js';
 
 function createScene() {
   const scene = new Scene();

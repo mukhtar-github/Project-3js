@@ -1,5 +1,5 @@
 
-import { BoxBufferGeometry, Mesh, MeshBasicMaterial } from '../systems/node_modules/three';
+import { BoxBufferGeometry, Mesh, MeshBasicMaterial } from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/build/three.module.js';
 
 function createCube() {
   // create a geometry

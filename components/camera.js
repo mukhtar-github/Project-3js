@@ -1,5 +1,5 @@
 
-import { PerspectiveCamera } from '../systems/node_modules/three';
+import { PerspectiveCamera } from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/build/three.module.js';
 
 function createCamera() {
   const camera = new PerspectiveCamera(
