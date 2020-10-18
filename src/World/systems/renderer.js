@@ -3,7 +3,9 @@ import { WebGLRenderer } from 'https://unpkg.com/three@0.117.0/build/three.modul
 function createRenderer() {
   const renderer = new WebGLRenderer();
 
+  // turn on the physically correct lighting model
+  renderer.physicallyCorrectLights = true;
+
   return renderer;
 }
-
 export { createRenderer };
