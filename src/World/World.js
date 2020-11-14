@@ -6,8 +6,7 @@ import { createScene } from './components/scene.js';
 import { createRenderer } from './systems/renderer.js';
 import { Resizer } from './systems/Resizer.js';
 
-// These variables are module-scoped: we cannot access them
-// from outside the module
+// These variables are module-scoped: we cannot access them from outside the module.
 let camera;
 let renderer;
 let scene;
@@ -25,6 +24,9 @@ class World {
     scene.add(cube, light);
 
     const resizer = new Resizer(container, camera, renderer);
+    resizer.onResize = () => {
+      this.render();
+    };
   }
 
   render() {
