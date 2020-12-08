@@ -5,6 +5,7 @@ import { createScene } from './components/scene.js';
 
 import { createRenderer } from './systems/renderer.js';
 import { Resizer } from './systems/Resizer.js';
+import { Loop } from './systems/Loop.js';
 
 // These variables are module-scoped: we cannot access them from outside the module.
 let camera;
