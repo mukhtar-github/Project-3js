@@ -11,12 +11,14 @@ import { Loop } from './systems/Loop.js';
 let camera;
 let renderer;
 let scene;
+let loop;
 
 class World {
   constructor(container) {
     camera = createCamera();
-    scene = createScene();
     renderer = createRenderer();
+    scene = createScene();
+    loop = new Loop(camera, scene, renderer);
     container.append(renderer.domElement);
 
     const cube = createCube();
