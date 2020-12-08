@@ -36,6 +36,14 @@ class World {
     // draw a single frame
     renderer.render(scene, camera);
   }
+  
+  start() {
+    loop.start();
+  }
+  
+  stop() {
+    loop.stop();
+  }
 }
 
 export { World };
