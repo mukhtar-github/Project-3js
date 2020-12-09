@@ -7,7 +7,12 @@ class Loop {
     this.renderer = renderer;
   }
 
-  start() {}
+  start() {
+    this.renderer.setAnimationLoop(() => {
+      // render a frame
+      this.renderer.render(this.scene, this.camera);
+    });
+  }
 
   stop() {}
 }
