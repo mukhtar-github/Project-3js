@@ -14,7 +14,9 @@ class Loop {
     });
   }
 
-  stop() {}
+  stop() {
+    this.renderer.setAnimationLoop(null);
+  }
 }
 
 export { Loop };
