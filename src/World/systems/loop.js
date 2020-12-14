@@ -9,14 +9,20 @@ class Loop {
 
   start() {
     this.renderer.setAnimationLoop(() => {
+      // tell every animated object to tick forward one frame
+      this.tick();
+  
       // render a frame
       this.renderer.render(this.scene, this.camera);
     });
   }
-
+  
   stop() {
     this.renderer.setAnimationLoop(null);
   }
-}
+  
+  tick() {
+    // Code to update animations will go here
+  }
 
 export { Loop };
