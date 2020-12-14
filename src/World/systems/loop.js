@@ -5,6 +5,7 @@ class Loop {
     this.camera = camera;
     this.scene = scene;
     this.renderer = renderer;
+    this.updatables = [];
   }
 
   start() {
@@ -25,4 +26,4 @@ class Loop {
     // Code to update animations will go here
   }
 
-export { Loop };
+  export { Loop };
