@@ -23,7 +23,9 @@ class Loop {
   }
   
   tick() {
-    // Code to update animations will go here
+    for (const object of this.updatables) {
+      object.tick();
+    }
   }
 
   export { Loop };
