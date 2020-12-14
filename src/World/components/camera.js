@@ -15,5 +15,3 @@ function createCamera() {
 }
 
 export { createCamera };
-
-//https://unpkg.com/three@0.117.0/build/three.module.js
