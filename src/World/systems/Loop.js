@@ -1,4 +1,4 @@
-import { Clock } from 'https://unpkg.com/three@0.117.0/build/three.module.js';
+import { Clock } from '/vendor/three/build/three.module.js';
 
 const clock = new Clock();
 
