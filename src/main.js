@@ -4,7 +4,7 @@ function main() {
   // Get a reference to the container element
   const container = document.querySelector('#scene-container');
 
-  // 1. Create an instance of the World app
+  // create a new world
   const world = new World(container);
 
   // start the animation loop
