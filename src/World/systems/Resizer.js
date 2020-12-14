@@ -8,7 +8,7 @@ const setSize = (container, camera, renderer) => {
 
 class Resizer {
   constructor(container, camera, renderer) {
-    // set initial size on load
+    // set initial size
     setSize(container, camera, renderer);
 
     window.addEventListener('resize', () => {
@@ -18,6 +18,7 @@ class Resizer {
       this.onResize();
     });
   }
+
   onResize() {}
 }
 
